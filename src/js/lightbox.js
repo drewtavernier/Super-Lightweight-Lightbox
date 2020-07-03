@@ -13,33 +13,17 @@
 // Trap focus in lightbox
 // Close Button at Top variant
 
-// ------------------------------------
-// CONTROL STATE
-// ------------------------------------
 
-function sllb_lightboxOpen(target) {
-    console.log('sllb_lightboxOpen');
-    // Stop background scrolling
-    let getBody =  document.querySelector("body");
-    getBody.setAttribute("overflow", "hidden");
-
-    // remove hidden class
-    target.classList.remove("sllb-hidden");
-}
-
-function sllb_lightboxClose(target) {
-     // Reset background scrolling
-     console.log('sllb_lightboxClose');
-     let getBody =  document.querySelector("body");
-     getBody.setAttribute("overflow", "auto");   
-
-    // add hidden class
-    target.classList.add("sllb-hidden");
-}
 
 // ------------------------------------
 // CREATE LIGHTBOX
 // ------------------------------------
+
+/**
+ * Creates a Lightbox.
+ * @param {string} sllb_target - Target DIV for Lightbox
+ * @param {string} sllb_widthOverride - (OPTIONAL) Set WIDTH of Lightbox when calling.
+ */
 
 function sllb_createLightBox (sllb_target, sllb_widthOverride) {
 
@@ -53,10 +37,11 @@ function sllb_createLightBox (sllb_target, sllb_widthOverride) {
     let sllb_container = document.createElement('div');
     sllb_container.classList.add('sllb-lightbox');
     if (sllb_widthOverride != "") {
-        sllb_container.style.width = sllb_widthOverride
+        console.log(`sllb_widthOverride = ${sllb_widthOverride}`);
+        sllb_container.style.width = sllb_widthOverride;
+        sllb_container.style.maxWidth = sllb_widthOverride;
     }
     
-
     // Get existing HTML
     let getExistingHTML = sllb_target.innerHTML;
 
@@ -88,6 +73,12 @@ function sllb_createLightBox (sllb_target, sllb_widthOverride) {
 // CONTROL LIGHTBOX CREATION
 // ------------------------------------
 
+/**
+ * Call createlightbox IF the Lightbox does NOT exist.
+ * @param {string} state - set to "open" to launch Lightbox, "close" to hide Lightbox
+ * @param {string} target - Target DIV for Lightbox
+ * @param {string} sllb_widthOverride - (OPTIONAL) Set WIDTH of Lightbox when calling
+ */
 function sllb_lightbox(state, target, sllb_widthOverride) {
 
     console.log('sllb_lightbox');
@@ -119,15 +110,52 @@ function sllb_lightbox(state, target, sllb_widthOverride) {
     }
 }
 
+
+// ------------------------------------
+// CONTROL OPEN & CLOSING OF LIGHTBOX
+// ------------------------------------
+
+/**
+ * Controls Showing The Lightbox.
+ * @param {string} target - The reference to the Lightbox Div
+ */
+
+function sllb_lightboxOpen(target) {
+    console.log('sllb_lightboxOpen');
+    // Stop background scrolling
+    let getBody =  document.querySelector("body");
+    getBody.setAttribute("overflow", "hidden");
+
+    // remove hidden class
+    target.classList.remove("sllb-hidden");
+}
+
+/**
+ * Controls Closing The Lightbox.
+ * @param {string} target - The reference to the Lightbox Div
+ */
+
+function sllb_lightboxClose(target) {
+     // Reset background scrolling
+     console.log('sllb_lightboxClose');
+     let getBody =  document.querySelector("body");
+     getBody.setAttribute("overflow", "auto");   
+
+    // add hidden class
+    target.classList.add("sllb-hidden");
+}
+
+
+
 // ------------------------------------
 // ALTERNATE CLOSING MECHANICS
 // ------------------------------------
 
-// Skrim: OnClick
+/**
+ * Closes Lightbox When Clicking On Skrim.
+ */
+
 document.addEventListener('click', function (event) {
-
-    
-
     let sllb_target = event.target;
 	if (sllb_target.matches('.sllb-skrim')) {
         console.log('addEventListener');
@@ -135,7 +163,9 @@ document.addEventListener('click', function (event) {
     }
 }, false);
 
-// Escape key
+/**
+ * Closes Lightbox When Pressing Escape Key.
+ */
 document.onkeydown = function(evt) {
 
     console.log('onkeydown');
