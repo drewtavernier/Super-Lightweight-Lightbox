@@ -1,0 +1,24 @@
+{
+    // https://ritwickdey.github.io/vscode-live-sass-compiler/docs/faqs.html 
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": null
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+       "**/node_modules/**",
+       ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

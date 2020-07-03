@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightBox</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uas0urh.css">
+    <link rel="stylesheet" href="src/css/lightbox.min.css">
+    <style>
+        body {
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sllb_lightbox('open','signUp_LB')">Open Light Box</button> 
+
+    <button onclick="sllb_lightbox('open','signUp_LB_2')">Open Light Box</button> 
+
+    <div id="signUp_LB" class="sllb-hidden">
+        <h1>this is a lightbox</h1>
+    </div>
+
+    <div id="signUp_LB_2" class="sllb-hidden">
+        <header>
+            <h2>This is the header 2</h2>
+        </header>
+        <main>
+            <p>This is the main section 2</p>
+            <button onclick="alert('fingers crossed')">click me</button>
+        </main>
+        
+    </div>
+
+    <script src="src/js/lightbox.js"></script>
+</body>
+</html>
