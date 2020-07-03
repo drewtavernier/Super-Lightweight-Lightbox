@@ -34,7 +34,9 @@ Already sorted. Do as above but give the DIV a different ID
 
 --- 
 
-To Do:
+
+
+## To Do:
 - Close lightbox using back button
 - Control close SVG Colour using SASS variable
 - Convert SVG to code
