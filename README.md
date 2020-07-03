@@ -1,8 +1,10 @@
 # Super Lightweight Lightbox
-Welcome to a super lightweight lightbox
 
-This lightbox is really easy to use. 
-View the example page for implememtation
+**Need a lightbox without the faff?**
+
+Super Lightweight Lightbox just makes lightboxes, then you can add whatever you want inside it... Simples.
+
+Built with pure JavaScript and with no dependancies the Super Lightweight Lightbox does one job, but does it well. 
 
 
 ---
@@ -38,7 +40,8 @@ Already sorted. Do as above but give the DIV a different ID
 
 ## To Do:
 - Close lightbox using back button
-- Control close SVG Colour using SASS variable
 - Convert SVG to code
+- Control close SVG Colour using SASS variable
 - Trap focus in lightbox
-- Close Button at Top variant
+- Close Button at Top option
+- Close Button at outside lightbox option
