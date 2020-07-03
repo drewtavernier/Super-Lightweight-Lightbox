@@ -60,14 +60,19 @@
   transition: background-color 0.5s ease;
   background-color: #e1e1e1;
   border-radius: 4px;
-  font-family: sofia-pro, sans-serif;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   cursor: pointer;
   font-size: inherit;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #303B41;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #303B41;
-  border: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .sllb-lightbox__control-set--close-button:hover {

@@ -28,6 +28,7 @@ Add the CSS link in your head, and the JavaScript file just before your close bo
     <!-- Add your code here -->
     </div>
 
+
 **Then to open the Lightbox:** 
 - param 1 = "open" or "close" the lightbox
 - param 2 = the ID of the div
@@ -40,6 +41,7 @@ sllb_lightbox('open','myLightbox', '800px')
 **To close the Lightbox just pass the ID** 
 
 sllb_lightboxClose('myLightbox');
+
 
 ## Multiple Lightboxes
 
@@ -78,7 +80,7 @@ Footer Style
     $sllb-footer__border:       1px solid #ccc
     $sllb-footer__margin-top:   $sllb-unit * 3 + px     
     $sllb-footer__padding-top:  $sllb-unit * 3 + px
-    $sllb-footer__font-family:  sofia-pro, sans-serif
+    $sllb-footer__font-family:  "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif
 
 Close Button
 
@@ -99,7 +101,7 @@ SVG
 
 
 
-## To Do:
+## Upcoming Features / Improvements:
 - Close lightbox using back button
 - Convert SVG to code
 - Control close SVG Colour using SASS variable
