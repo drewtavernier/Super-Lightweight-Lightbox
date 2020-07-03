@@ -16,9 +16,9 @@ Create a div, add an ID and add the class sllb-hidden.
     </div>
 
 Then to open the Lightbox:
-param 1 = "open" or "close" the lightbox
-param 2 = the ID of the div
-param 3 = (OPTIONAL) if you want to override the width add a pixel amount here
+- param 1 = "open" or "close" the lightbox
+- param 2 = the ID of the div
+- param 3 = (OPTIONAL) if you want to override the width add a pixel amount here
 
 sllb_lightbox('open','myLightbox', '800px')
 
