@@ -82,18 +82,18 @@ Footer Style
 
 Close Button
 
-    $sllb-color__font--active:      #303B41
-    $sllb-active-color__background: #e1e1e1
+    $sllb-color__font--active:       #303B41
+    $sllb-color__active--background: #e1e1e1
 
-    $sllb-color__font--hover:       #ffffff
-    $sllb-color__background--hover: #303B41
+    $sllb-color__font--hover:        #ffffff
+    $sllb-color__background--hover:  #303B41
 
 SVG
 
-    // To change SVG 
+    // Rollover States 
     $sllb-svg--dark__url:           '../icons/cross-icon_dark.svg'
     $sllb-svg--light__url:          '../icons/cross-icon_light.svg'
-    $sllb-svg__url:                 '../icons/cross.svg'
+
 
 --- 
 
