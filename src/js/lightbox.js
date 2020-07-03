@@ -5,17 +5,6 @@
 // License  CC BY 2.0 - https://creativecommons.org/licenses/by/2.0/
 
 // ------------------------------------
-// TO DO 
-// ------------------------------------
-// Close lightbox using back button
-// Control close SVG Colour using SASS variable
-// Convert SVG to code
-// Trap focus in lightbox
-// Close Button at Top variant
-
-
-
-// ------------------------------------
 // CREATE LIGHTBOX
 // ------------------------------------
 
