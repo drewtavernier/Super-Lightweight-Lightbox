@@ -6,6 +6,8 @@ Super Lightweight Lightbox just makes lightboxes, then you can add whatever you 
 
 Built with pure JavaScript and with no dependancies the Super Lightweight Lightbox does one job, but does it well. 
 
+[See The Super Lightweight Lightbox In Action](http://superlightweightlightbox.com/)
+
 
 ---
 
