@@ -16,7 +16,7 @@ Built with pure JavaScript and with no dependancies the Super Lightweight Lightb
 Add the CSS link in your head, and the JavaScript file just before your close body tag
 
     <link rel="stylesheet" href="src/css/lightbox.min.css">
-    <script type="text/javascript" src="src/js/lightbox.js"></script>
+    <script type="text/javascript" src="src/js/super-lightweight-lightbox.js"></script>
 
 ---
 
@@ -25,7 +25,7 @@ Add the CSS link in your head, and the JavaScript file just before your close bo
 **Create a div, add an ID and add the class sllb-hidden.** 
 
     <div id="myLightbox" class="sllb-hidden">
-    <!-- Add your code here -->
+        <!-- Add your code here -->
     </div>
 
 
@@ -58,43 +58,47 @@ Already sorted. Do as above but give the DIV a different ID
 Universal Base Unit
 
     $sllb-unit:                 8 
-    $sllb-unit--px:             8px
+    $sllb-unit--px:             $sllb-unit + px
 
-Skrim - background block colour
 
-    $sllb-color__skrim:        rgba(0,0,0,0.8)
+Skrim - background block colour and blur amount
+
+    $sllb-skrim__background--color:     rgba(0,0,0,0.8)
+    $sllb-skrim__background--blur:      10px
 
 Lightbox
 
-    $sllb-max-width:            $sllb-unit * 40 + px
-    $sllb-border-radius:        $sllb-unit / 2 + px
-    $sllb-color__background:    #ffffff
-    $sllb-padding-top:          0
-    $sllb-padding-bottom:       $sllb-unit * 3 + px
-    $sllb-padding-left:         $sllb-unit * 3 + px
-    $sllb-padding-right:        $sllb-unit * 3 + px
-    $sllb-margin:               $sllb-unit * 3 + px
+    $sllb-max-width:                    $sllb-unit * 40 + px
+    $sllb-border-radius:                $sllb-unit / 2 + px
+    $sllb-color__background:            #ffffff 
+    $sllb-padding-top:                  0
+    $sllb-padding-bottom:               $sllb-unit * 3 + px
+    $sllb-padding-left:                 $sllb-unit * 3 + px
+    $sllb-padding-right:                $sllb-unit * 3 + px
+    $sllb-margin:                       $sllb-unit * 3 + px
 
 Footer Style
 
-    $sllb-footer__border:       1px solid #ccc
-    $sllb-footer__margin-top:   $sllb-unit * 3 + px     
-    $sllb-footer__padding-top:  $sllb-unit * 3 + px
-    $sllb-footer__font-family:  "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif
+    $sllb-footer__border:               1px solid #ccc
+    $sllb-footer__margin-top:           $sllb-unit * 3 + px     
+    $sllb-footer__padding-top:          $sllb-unit * 3 + px
+    $sllb-footer__font-family:          "Avant Garde", Avantgarde, 
+                                        "Century Gothic", CenturyGothic, 
+                                        AppleGothic, sans-serif
+
 
 Close Button
 
-    $sllb-color__font--active:       #303B41
-    $sllb-color__active--background: #e1e1e1
+    $sllb-color__font--active:          #303B41
+    $sllb-color__background--active:    #e1e1e1
 
-    $sllb-color__font--hover:        #ffffff
-    $sllb-color__background--hover:  #303B41
+    $sllb-color__font--hover:           #ffffff
+    $sllb-color__background--hover:     #303B41
 
 SVG
 
-    // Rollover States 
-    $sllb-svg--dark__url:           '../icons/cross-icon_dark.svg'
-    $sllb-svg--light__url:          '../icons/cross-icon_light.svg'
+    $sllb-svg__color--active:           $sllb-color__font--active
+    $sllb-svg__color--hover:            $sllb-color__font--hover
 
 
 --- 
@@ -102,9 +106,8 @@ SVG
 
 
 ## Upcoming Features / Improvements:
-- Close lightbox using back button
-- Convert SVG to code
-- Control close SVG Colour using SASS variable
-- Trap focus in lightbox
-- Close Button at Top option
-- Close Button at outside lightbox option
+- **BUG:** Fix escape key when 2 or more lightboxes are implemented on the same page
+- **IMPROVEMENT:** Close lightbox using back button
+- **IMPROVEMENT:** Trap focus in lightbox
+- **FEATURE:** Close Button at Top option
+- **FEATURE:** Close Button at outside lightbox option
