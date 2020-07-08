@@ -108,7 +108,6 @@ SVG
 
 
 ## Upcoming Features / Improvements:
-- **BUG:** Fix escape key when 2 or more lightboxes are implemented on the same page
 - **IMPROVEMENT:** Close lightbox using back button
 - **IMPROVEMENT:** Trap focus in lightbox
 - **FEATURE:** Close Button at Top option

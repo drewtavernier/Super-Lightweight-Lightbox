@@ -142,7 +142,12 @@ function sllb_lightboxClose(target) {
      getBody.setAttribute("overflow", "auto");   
 
     // add hidden class
-    target.classList.add("sllb-hidden");
+    try {
+        target.classList.add("sllb-hidden");
+    } catch (error) {
+        console.error(error);
+    }
+    
 }
 
 
@@ -169,8 +174,10 @@ document.onkeydown = function(evt) {
 
     evt = evt || window.event;
     if (evt.keyCode == 27) {
-        let sllb_target = document.querySelector('.sllb-skrim');
-        console.log('onkeydown' + sllb_target );
-        sllb_lightboxClose(sllb_target);
+        let sllb_target = document.querySelectorAll('.sllb-skrim');
+
+        for (let i = 0; i < sllb_target.length; i++) {
+            sllb_lightboxClose(sllb_target[i]);
+        }
     }
 };
