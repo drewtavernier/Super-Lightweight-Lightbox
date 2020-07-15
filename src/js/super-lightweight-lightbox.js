@@ -125,7 +125,9 @@ function sllb_lightbox(state, target, sllb_widthOverride) {
 function sllb_lightboxOpen(target) {
     // Stop background scrolling
     let getBody =  document.querySelector("body");
-    getBody.setAttribute("overflow", "hidden");
+    // getBody.setAttribute("overflow", "hidden");
+
+    getBody.classList.add('sllb-lightbox__body-scroll-lock');
 
     // remove hidden class
     target.classList.remove("sllb-hidden");
@@ -139,7 +141,8 @@ function sllb_lightboxOpen(target) {
 function sllb_lightboxClose(target) {
      // Reset background scrolling
      let getBody =  document.querySelector("body");
-     getBody.setAttribute("overflow", "auto");   
+     // getBody.setAttribute("overflow", "auto");  
+     getBody.classList.remove('sllb-lightbox__body-scroll-lock'); 
 
     // add hidden class
     try {

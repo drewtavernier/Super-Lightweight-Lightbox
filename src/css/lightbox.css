@@ -38,6 +38,10 @@
   position: relative;
 }
 
+.sllb-lightbox__body-scroll-lock {
+  overflow: hidden;
+}
+
 .sllb-lightbox__footer {
   border-top: 1px solid #ccc;
   padding-top: 24px;

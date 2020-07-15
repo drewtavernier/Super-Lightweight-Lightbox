@@ -112,3 +112,25 @@ SVG
 - **IMPROVEMENT:** Trap focus in lightbox
 - **FEATURE:** Close Button at Top option
 - **FEATURE:** Close Button at outside lightbox option
+
+## Outstanding Bugs:
+- **BUG:** Scroll lightbox content when screen height cuts off lightbox content
+
+## Versions
+
+**1.1.2 - Super Lightweight Lightbox**
+
+Bug Fix:
+
+Now background page doesn't scroll when lightbox is shown
+
+**1.1.1 - Super Lightweight Lightbox**
+
+Bug Fix:
+
+Fixed escape key when 2 or more lightboxes are implemented on the same page.
+
+**1.1 - Super Lightweight Lightbox**
+- SVG dependancy removed
+- Close Button SVGs are now code based loaded from: super-lightweight-lightbox.js
+- SASS classes now use BEM name conventions
