@@ -113,16 +113,25 @@ SVG
 - **FEATURE:** Close Button at Top option
 - **FEATURE:** Close Button at outside lightbox option
 
-## Outstanding Bugs:
-- **BUG:** Scroll lightbox content when screen height cuts off lightbox content
+---
 
 ## Versions
+
+**1.1.3 - Super Lightweight Lightbox**
+
+Bug Fix:
+
+Now the Lightbox scrolls when content is off screen
+
+--
 
 **1.1.2 - Super Lightweight Lightbox**
 
 Bug Fix:
 
 Now background page doesn't scroll when lightbox is shown
+
+--
 
 **1.1.1 - Super Lightweight Lightbox**
 
